@@ -1,0 +1,28 @@
+.hero {
+  height: 400px;
+  background-image: url("assets/images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    .tag {
+      font-size: 14px;
+      color: #FFF;
+    }
+    .title {
+      font-size: 28px;
+      color: #FFF;
+    }
+    .description {
+      font-size: 14px;
+      color: #FFF;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.card {
+  height: 400px;
+  background-image: url("assets/images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  .overlay {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    .title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.5s;
+      @media (max-width: 768px) {
+        transform: translateY(-70px);
+      }
+      .country {
+        font-size: 14px;
+        color: #FFF;
+        text-align: center;
+      }
+      .city {
+        font-size: 28px;
+        color: #FFF;
+        text-align: center;
+      }
+    }
+    .description {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        font-size: 14px;
+        color: #FFF;
+        text-align: center;
+      }
+      p,
+      .btn-transparent {
+        margin: 0 10px 20px;
+        transform: translateY(50px);
+        transition: 0.5s;
+        opacity: 0;
+        @media (max-width: 768px) {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &:hover {
+    .overlay {
+      .title {
+        transform: translateY(-70px);
+      }
+      .description {
+        p,
+        .btn-transparent {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,9 @@
+.footer {
+  @apply my-8;
+  .about {
+    @apply flex items-center justify-center md:justify-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px 20px;
+  &.btn-transparent {
+    color: #FFF;
+    border: 1px solid #FFF;
+  }
+  &.btn-dark {
+    color: #003543;
+    border: 1px solid #003543;
+  }
+}
